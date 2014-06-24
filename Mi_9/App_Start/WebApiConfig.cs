@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http;
 using System.Web.Http;
+using System.Web.Http.Routing;
 
 namespace Mi_9
 {
@@ -13,6 +15,13 @@ namespace Mi_9
                 name: "DefaultApi",
                 routeTemplate: "api/{controller}/{id}",
                 defaults: new { id = RouteParameter.Optional }
+            );
+
+            config.Routes.MapHttpRoute(
+                name: "rootApi",
+                routeTemplate: "{controller}",
+                defaults: new { id = RouteParameter.Optional, controller = "Values" },
+                constraints: new { httpMethod = new HttpMethodConstraint(HttpMethod.Post) }
             );
         }
     }
