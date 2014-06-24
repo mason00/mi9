@@ -55,7 +55,7 @@ namespace Mi_9.Controllers
             rr.response = pls.ToList();
             string resultJson = jss.Serialize(rr);
 
-            m.StatusCode = HttpStatusCode.Created;
+            m.StatusCode = HttpStatusCode.OK;
             m.Content = new StringContent(resultJson, Encoding.UTF8, "application/json");
             return m;
         }
