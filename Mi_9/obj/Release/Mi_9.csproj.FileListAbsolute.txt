@@ -29,3 +29,4 @@ d:\Zhenxin\documents\visual studio 2012\Projects\Mi_9\Mi_9\bin\System.Web.WebPag
 d:\Zhenxin\documents\visual studio 2012\Projects\Mi_9\Mi_9\bin\System.Web.WebPages.Razor.xml
 d:\Zhenxin\documents\visual studio 2012\Projects\Mi_9\Mi_9\obj\Release\Mi_9.dll
 d:\Zhenxin\documents\visual studio 2012\Projects\Mi_9\Mi_9\obj\Release\Mi_9.pdb
+d:\Zhenxin\documents\visual studio 2012\Projects\Mi_9\Mi_9\obj\Release\Mi_9.csprojResolveAssemblyReference.cache

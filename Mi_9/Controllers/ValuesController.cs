@@ -44,8 +44,9 @@ namespace Mi_9.Controllers
             }
             catch (Exception ex)
             {
+                string errorJson = "{\"error\": \"Could not decode request: JSON parsing failed\"}";
                 m.StatusCode = HttpStatusCode.BadRequest;
-                m.Headers.Add("error", "{\"error\": \"Could not decode request: JSON parsing failed\"}");
+                m.Content = new StringContent(errorJson, Encoding.UTF8, "application/json");
                 return m;
             }
             var pls = from pl in data.payload
